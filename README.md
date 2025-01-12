@@ -1,14 +1,14 @@
-# 🎮 Assembly Pacman Game Pro
+# Assembly Pacman Game Pro
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Assembly](https://img.shields.io/badge/Assembly-x86-blue.svg)](https://docs.microsoft.com/en-us/cpp/assembler/masm/microsoft-macro-assembler-reference)
 [![Visual Studio](https://img.shields.io/badge/Visual_Studio-2022-purple.svg)](https://visualstudio.microsoft.com/)
 
-## 🌟 Overview
+## Overview
 **Assembly Pacman** is an advanced implementation of the classic arcade game Pacman, built using **x86 Assembly**. The game features **multiple maze levels**, **intelligent ghost AI**, **dynamic scoring**, and **audio effects**. It is designed to provide both a nostalgic and challenging experience for players. This project demonstrates advanced assembly programming techniques while delivering an engaging gaming experience.
 
-## ✨ Features
+## Features
 
-### 🎯 Core Gameplay Features
+### Core Gameplay Features
 - **Multi-Level Design**:
   - 3 unique maze layouts with increasing difficulty.
   - Each level has its own set of challenges.
@@ -19,21 +19,21 @@
   - Multiple ghosts with unique behaviors and movement patterns.
   - Increasing difficulty as the game progresses.
 
-### 🎵 Audio System
+### Audio System
 - **Background Music**:
   - Level-specific themes to enhance the immersive experience.
   - Music for menus and level transitions.
 - **Sound Effects**:
   - Sounds for dot collection, ghost encounters, and game over scenarios.
 
-### 🎨 User Interface
+### User Interface
 - **Welcome Screen** with game title and options.
 - **Main Menu** for game navigation.
 - **Pause Menu** for in-game options.
 - **Score Display** showing current score and lives remaining.
 - **Lives Counter** to track player’s remaining lives.
 
-## 🛠️ Setup Requirements
+## 🛠Setup Requirements
 
 ### Essential Software
 - **MASM (Microsoft Macro Assembler)**: For assembling the game code.
@@ -110,7 +110,7 @@ cd path/to/project
 pacman.exe
 ```
 
-## 🎮 Game Controls
+## Game Controls
 ### Main Controls
 ```bash
 - Key	Action
@@ -122,14 +122,14 @@ pacman.exe
 - X	Exit Game
 ```
 
-## Menu Navigation
+### Menu Navigation
 ```bash
 - 1-5 -> Menu Selection
 - Enter ->	Confirm Selection
 - Esc	-> Back/Exit
 ```
 
-## 🔧 Technical Details
+## Technical Details
 ### Core Components
 ```bash
 .386            ; Processor directive
@@ -154,7 +154,7 @@ include Irvine32.inc     ; Irvine32 library for I/O functions
 
 ## 🎥 Screenshots
 ### Welcome Screen
-
+![Welcome Screen](firstpage.png)
 
 ### Gameplay
 
