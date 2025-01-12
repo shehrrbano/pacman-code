@@ -3,19 +3,6 @@
 [![Assembly](https://img.shields.io/badge/Assembly-x86-blue.svg)](https://docs.microsoft.com/en-us/cpp/assembler/masm/microsoft-macro-assembler-reference)
 [![Visual Studio](https://img.shields.io/badge/Visual_Studio-2022-purple.svg)](https://visualstudio.microsoft.com/)
 
-## 📖 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Setup Requirements](#setup-requirements)
-- [Installation Guide](#installation-guide)
-- [Game Controls](#game-controls)
-- [Technical Details](#technical-details)
-- [Screenshots](#screenshots)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-- [Contact](#contact)
-
 ## 🌟 Overview
 **Assembly Pacman** is an advanced implementation of the classic arcade game Pacman, built using **x86 Assembly**. The game features **multiple maze levels**, **intelligent ghost AI**, **dynamic scoring**, and **audio effects**. It is designed to provide both a nostalgic and challenging experience for players. This project demonstrates advanced assembly programming techniques while delivering an engaging gaming experience.
 
@@ -114,7 +101,7 @@ cd path/to/project
 # Run the compiled executable
 pacman.exe
 ```
-3. Running the Game
+### 3. Running the Game
 ```bash
 # Navigate to the project directory
 cd path/to/project
@@ -123,23 +110,27 @@ cd path/to/project
 pacman.exe
 ```
 
-🎮 Game Controls
-Main Controls
-Key	Action
-W	Move Up
-S	Move Down
-A	Move Left
-D	Move Right
-P	Pause Game
-X	Exit Game
+## 🎮 Game Controls
+### Main Controls
+```bash
+- Key	Action
+- W	Move Up
+- S	Move Down
+- A	Move Left
+- D	Move Right
+- P	Pause Game
+- X	Exit Game
+```
 
-Menu Navigation
-1-5 -> Menu Selection
-Enter ->	Confirm Selection
-Esc	-> Back/Exit
+## Menu Navigation
+```bash
+- 1-5 -> Menu Selection
+- Enter ->	Confirm Selection
+- Esc	-> Back/Exit
+```
 
-🔧 Technical Details
-Core Components
+## 🔧 Technical Details
+### Core Components
 ```bash
 .386            ; Processor directive
 .model flat     ; Memory model
@@ -149,7 +140,7 @@ includelib winmm.lib     ; Windows multimedia library
 include Irvine32.inc     ; Irvine32 library for I/O functions
 ```
 
-Memory Structure
+### Memory Structure
 ```bash
 .data
     ; Game state variables
@@ -161,44 +152,44 @@ Memory Structure
     screenBuffer BYTE 120 DUP(?)
 ```
 
-🎥 Screenshots
-Welcome Screen
+## 🎥 Screenshots
+### Welcome Screen
 
 
-Gameplay
+### Gameplay
 
 
-Level Selection
+### Level Selection
 
 
-❗ Troubleshooting
-Common Issues
-1. Compilation Errors
+## ❗ Troubleshooting
+### Common Issues
+#### 1. Compilation Errors
 ```bash
 Error: Cannot find Irvine32.lib
 Solution: Verify that the Irvine32 library path is correctly configured in project settings.
 ```
 
-2. Runtime Errors
+#### 2. Runtime Errors
 ```bash
 Error: Sound not playing
 Solution: Ensure that `winmm.lib` is properly linked in the project settings.
 ```
 
-3. Display Issues
+#### 3. Display Issues
 ```bash
 Error: Screen flickering
 Solution: Enable double buffering in display settings to reduce flickering.
 ```
 
-📝 License
+## 📝 License
 MIT License
 
-🙏 Acknowledgements
+## 🙏 Acknowledgements
 Pacman original game concept by Namco.
 The Assembly Language Community for continued learning and development.
 Irvine32 Library for providing essential tools for assembly programming.
-📧 Contact
+## 📧 Contact
 Shehr Bano - sshehrrbano@gmail.com
 Anila Younas - anilayounas41@gmail.com
 
