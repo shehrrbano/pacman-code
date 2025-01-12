@@ -74,14 +74,14 @@
 
 #### Method 1: Using Visual Studio
 ```bash
-1. Open **Visual Studio 2022**.
-2. Create a new **Assembly Project**:
-   - Go to **File -> New -> Project -> Assembly Project**.
+1. Open Visual Studio 2022.
+2. Create a new Assembly Project:
+   - Go to File -> New -> Project -> Assembly Project.
 3. Configure the project settings:
-   - Right-click the project and select **Properties**.
-   - Set the **Platform** to **x86**.
-   - Set the **Configuration Type** to **.exe** (Executable).
-   - Add the **Irvine32 library path** under **Additional Library Directories**.
+   - Right-click the project and select Properties.
+   - Set the Platform to x86.
+   - Set the Configuration Type to .exe (Executable).
+   - Add the Irvine32 library path under Additional Library Directories.
 ```
 
 #### Method 2: Using Command Line
