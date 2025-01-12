@@ -33,7 +33,7 @@
 - **Score Display** showing current score and lives remaining.
 - **Lives Counter** to track player’s remaining lives.
 
-## 🛠Setup Requirements
+## Setup Requirements
 
 ### Essential Software
 - **MASM (Microsoft Macro Assembler)**: For assembling the game code.
@@ -49,7 +49,7 @@
 - `user32.lib`
 
 
-## 📥 Installation Guide
+## Installation Guide
 
 ### 1. Setting Up the Environment
 
@@ -152,17 +152,32 @@ include Irvine32.inc     ; Irvine32 library for I/O functions
     screenBuffer BYTE 120 DUP(?)
 ```
 
-## 🎥 Screenshots
+## Screenshots
 ### Welcome Screen
 ![Welcome Screen](firstpage.png)
 
-### Gameplay
+### Enter Your Name Screen
+![Enter Your Name Screen](secondpage.png)
 
+### Main Menu Screen
+![Main Menu Screen](thirdpage.png)
 
-### Level Selection
+### Start Game Screen
+![Start Game Screen](lastpage.png)
 
+### Level Selection Screen
+![Level Selection Screen](forthpage.png)
 
-## ❗ Troubleshooting
+### Score Display Screen
+![Score Display Screen](fifthpage.png)
+
+### Instructions Screen
+![Instructions Screen](sixthpage.png)
+
+### Exit Screen
+![Exit Screen](seventhpage.png)
+
+## Troubleshooting
 ### Common Issues
 #### 1. Compilation Errors
 ```bash
@@ -182,14 +197,15 @@ Error: Screen flickering
 Solution: Enable double buffering in display settings to reduce flickering.
 ```
 
-## 📝 License
+## License
 MIT License
 
-## 🙏 Acknowledgements
+## Acknowledgements
 Pacman original game concept by Namco.
 The Assembly Language Community for continued learning and development.
 Irvine32 Library for providing essential tools for assembly programming.
-## 📧 Contact
+
+## Contact
 Shehr Bano - sshehrrbano@gmail.com
 Anila Younas - anilayounas41@gmail.com
 
