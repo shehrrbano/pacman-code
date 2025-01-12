@@ -12,7 +12,6 @@
 - [Technical Details](#technical-details)
 - [Screenshots](#screenshots)
 - [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
@@ -62,19 +61,7 @@
 - `kernel32.lib`
 - `user32.lib`
 
-## 📥 Installation Guide
 
-### 1. Setting Up the Environment
-
-#### Installing Visual Studio
-```bash
-1. Download Visual Studio 2022 from the official site.
-2. During installation, select:
-   - Desktop development with C++
-   - Windows 10/11 SDK
-Here's the **README.md** code for the **Installation Guide** and **Project Setup** sections written specifically for your Assembly Pacman project:
-
-```markdown
 ## 📥 Installation Guide
 
 ### 1. Setting Up the Environment
@@ -99,6 +86,7 @@ Here's the **README.md** code for the **Installation Guide** and **Project Setup
 ### 2. Project Setup
 
 #### Method 1: Using Visual Studio
+```bash
 1. Open **Visual Studio 2022**.
 2. Create a new **Assembly Project**:
    - Go to **File -> New -> Project -> Assembly Project**.
@@ -107,6 +95,7 @@ Here's the **README.md** code for the **Installation Guide** and **Project Setup
    - Set the **Platform** to **x86**.
    - Set the **Configuration Type** to **.exe** (Executable).
    - Add the **Irvine32 library path** under **Additional Library Directories**.
+```
 
 #### Method 2: Using Command Line
 ```bash
@@ -125,3 +114,91 @@ cd path/to/project
 # Run the compiled executable
 pacman.exe
 ```
+3. Running the Game
+```bash
+# Navigate to the project directory
+cd path/to/project
+
+# Run the compiled executable
+pacman.exe
+```
+
+🎮 Game Controls
+Main Controls
+Key	Action
+W	Move Up
+S	Move Down
+A	Move Left
+D	Move Right
+P	Pause Game
+X	Exit Game
+
+Menu Navigation
+1-5 -> Menu Selection
+Enter ->	Confirm Selection
+Esc	-> Back/Exit
+
+🔧 Technical Details
+Core Components
+```bash
+.386            ; Processor directive
+.model flat     ; Memory model
+.stack 4096     ; Stack size
+
+includelib winmm.lib     ; Windows multimedia library
+include Irvine32.inc     ; Irvine32 library for I/O functions
+```
+
+Memory Structure
+```bash
+.data
+    ; Game state variables
+    score       DWORD 0
+    lives       BYTE 3
+    level       BYTE 1
+    
+    ; Screen buffer to store the game display
+    screenBuffer BYTE 120 DUP(?)
+```
+
+🎥 Screenshots
+Welcome Screen
+
+
+Gameplay
+
+
+Level Selection
+
+
+❗ Troubleshooting
+Common Issues
+1. Compilation Errors
+```bash
+Error: Cannot find Irvine32.lib
+Solution: Verify that the Irvine32 library path is correctly configured in project settings.
+```
+
+2. Runtime Errors
+```bash
+Error: Sound not playing
+Solution: Ensure that `winmm.lib` is properly linked in the project settings.
+```
+
+3. Display Issues
+```bash
+Error: Screen flickering
+Solution: Enable double buffering in display settings to reduce flickering.
+```
+
+📝 License
+MIT License
+
+🙏 Acknowledgements
+Pacman original game concept by Namco.
+The Assembly Language Community for continued learning and development.
+Irvine32 Library for providing essential tools for assembly programming.
+📧 Contact
+Shehr Bano - sshehrrbano@gmail.com
+Anila Younas - anilayounas41@gmail.com
+
