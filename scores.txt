@@ -1,0 +1,8 @@
+Bano       320   2
+Hamdan     20    1
+Hassan     520   3
+Zainab     189   1
+Ali        297   2
+Sara       126   1
+Anila      293   2
+                                                            
