@@ -101,14 +101,6 @@ cd path/to/project
 # Run the compiled executable
 pacman.exe
 ```
-### 3. Running the Game
-```bash
-# Navigate to the project directory
-cd path/to/project
-
-# Run the compiled executable
-pacman.exe
-```
 
 ## Game Controls
 ### Main Controls
